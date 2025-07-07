@@ -1,0 +1,25 @@
+[unix_http_server]
+file = /var/supervisord.sock
+
+[supervisorctl]
+configuration = /var/s.conf
+serverurl = unix:///var/supervisord.sock
+
+[supervisord]
+directory = /home/root
+pidfile = ./supervisord.pid
+logfile = ./supervisord.log
+minprocs=10
+
+[rpcinterface:supervisor]
+supervisor.rpcinterface_factory = supervisor.rpcinterface:make_main_rpcinterface
+
+[program: frps]
+directory = /home/root
+command = /home/root/frps -c /home/root/frps.toml
+stdout_logfile = ./frps.log
+redirect_stderr = true
+stopwaitsecs = 10
+autorestart = true
+killasgroup=true
+stopasgroup=true

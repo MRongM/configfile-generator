@@ -1,0 +1,13 @@
+[Unit]
+Description = wssh
+After = network.target syslog.target
+Wants = network.target
+
+[Service]
+Type = simple
+ExecStart = /bin/bash -c "/root/.venv/bin/wssh --port=2222"
+Restart=on-failure
+RestartSec=60s
+
+[Install]
+WantedBy = multi-user.target

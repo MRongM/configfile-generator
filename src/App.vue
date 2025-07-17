@@ -6,7 +6,7 @@
     </a>
     <a class="nav-item" href="https://github.com/github/gitignore" target="_blank" rel="noopener">
       <i class="fab fa-github"></i>
-      <span>GitHub</span>
+      <span>更多ignore文件</span>
     </a>
   </nav>
   <div class="container">

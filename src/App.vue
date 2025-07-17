@@ -2,7 +2,7 @@
   <nav class="navbar">
     <a class="nav-item" href="https://portal-app.328064.xyz" target="_blank" rel="noopener">
       <i class="fas fa-globe"></i>
-      <span>门户</span>
+      <span>应用门户</span>
     </a>
     <a class="nav-item" href="https://github.com/github/gitignore" target="_blank" rel="noopener">
       <i class="fab fa-github"></i>

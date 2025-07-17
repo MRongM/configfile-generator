@@ -1,4 +1,14 @@
 <template>
+  <nav class="navbar">
+    <a class="nav-item" href="https://portal-app.328064.xyz" target="_blank" rel="noopener">
+      <i class="fas fa-globe"></i>
+      <span>门户</span>
+    </a>
+    <a class="nav-item" href="https://github.com/github/gitignore" target="_blank" rel="noopener">
+      <i class="fab fa-github"></i>
+      <span>GitHub</span>
+    </a>
+  </nav>
   <div class="container">
     <img src="/banner.png" alt="wordcloud" class="logo-banner" />
     <div class="search-area">
@@ -190,5 +200,34 @@ export default {
 .suggestions li:hover,
 .suggestions li.active {
   background-color: #f1f3f4;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 12px 24px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  position: sticky; /* 可选：固定顶部 */
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  font-size: 16px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-item i {
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.nav-item:hover {
+  color: #42b983; /* Vue 绿或你喜欢的主色 */
 }
 </style>

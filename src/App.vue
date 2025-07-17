@@ -205,7 +205,7 @@ export default {
   display: flex;
   align-items: center;
   background-color: #ffffff;
-  padding: 12px 24px;
+  padding: 12px 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   position: sticky; /* 可选：固定顶部 */
   top: 0;
@@ -228,6 +228,11 @@ export default {
 }
 
 .nav-item:hover {
-  color: #42b983; /* Vue 绿或你喜欢的主色 */
+    color: #6f42c1;
+  }
+
+.navbar a {
+  font-weight: bold;     /* 加粗 */
+  text-decoration: none; /* 可选：去掉下划线 */
 }
 </style>
